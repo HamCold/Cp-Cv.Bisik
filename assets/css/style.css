@@ -25,29 +25,37 @@
 
 /* ============ DARK MODE THEME ============ */
 [data-theme="dark"] {
-  /* Dark Gray Background Colors - Smooth & Harmonious */
-  --bg-body: #1a1d23;
-  --bg-secondary: #22252b;
-  --bg-card: #2a2d35;
+  /* --- 1. Background Colors (Tetap gelap untuk kontras) --- */
+  --bg-body: #121212;
+  --bg-secondary: #1f1f1f;
+  --bg-card: #2c2c2c;
 
-  /* Text Colors - Perfect Contrast */
-  --text-primary: #e4e6eb;
-  --text-secondary: #b0b3b8;
-  --text-muted: #8a8d91;
+  /* --- 2. Text Colors (Menyala/Lebih Cerah) --- */
+  /* Putih murni, ini yang paling 'menyala' di layar gelap */
+  --text-primary: #ffffff;
+  /* Abu-abu sangat terang */
+  --text-secondary: #f0f0f0;
+  /* Abu-abu terang untuk keterangan */
+  --text-muted: #b0b0b0;
 
-  /* Border & Divider Colors */
-  --border-color: #3a3d45;
+  /* --- 3. Border & Divider Colors --- */
+  --border-color: #404040;
 
-  /* Shadows for Dark Mode - Subtle */
-  --shadow-sm: rgba(0, 0, 0, 0.3);
-  --shadow-md: rgba(0, 0, 0, 0.4);
-  --shadow-lg: rgba(0, 0, 0, 0.5);
+  /* --- 4. Shadows --- */
+  --shadow-sm: rgba(0, 0, 0, 0.4);
+  --shadow-md: rgba(0, 0, 0, 0.55);
+  --shadow-lg: rgba(0, 0, 0, 0.7);
 
-  /* Primary Colors - Muted Slate Blue (Harmonious with Dark Gray) */
-  --primary-color: #6b7fa8;
-  --primary-dark: #5a6d8f;
-  --primary-light: #8195b8;
-  --gradient-primary: linear-gradient(135deg, #6b7fa8 0%, #5a6d8f 100%);
+  /* --- 5. Primary Colors - Deep Navy/Indigo --- */
+  /* Biru Tua/Navy yang dalam */
+  --primary-color: #3b5998; /* Warna Navy yang klasik dan elegan */
+  --primary-dark: #2d4373; /* Versi lebih gelap untuk shadow/hover */
+  --primary-light: #5275c2; /* Versi lebih terang untuk hover/highlight */
+  /* Gradient yang lebih halus */
+  --gradient-primary: linear-gradient(135deg, #3b5998 0%, #2d4373 100%);
+
+  /* Opsional: Hover State (bisa disesuaikan) */
+  --bg-hover: #333333;
 }
 
 /* ============ GLOBAL STYLES ============ */
@@ -1086,6 +1094,15 @@ footer .btn-outline-light:hover {
 
 .icon-box:hover {
   transform: rotate(360deg);
+}
+
+/* Foto img Logo */
+.logo-cv {
+  /* Atur tinggi (height) logo agar sesuai dengan tinggi font H4 */
+  height: 1.5em; /* Nilai ini mungkin perlu disesuaikan */
+  width: auto; /* Memastikan rasio aspek terjaga */
+  /* Opsional: Tambahkan sedikit penyesuaian posisi vertikal */
+  vertical-align: middle;
 }
 
 /* Stats Counter Animation */
